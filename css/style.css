@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-light: #ffffff;
+  --color-orange: #e6630d;
+  --color-blue: rgb(12, 7, 39);
+  --transition: 0.5s;
+  --l-gradiente: rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.9);
+}
+
+.logo {
+  position: relative;
+  font-size: 32px;
+}
+
+.logo-square {
+  background-color: var(--color-orange);
+  border-radius: 5px;
+  padding: 5px;
+  color: var(--color-light);
+}
+
+.anchor,
+.logo {
+  text-decoration: none;
+  color: var(--color-light);
+  font-weight: 900;
+  transition: var(--transition);
+}
+
+.anchor:hover {
+  color: var(--color-orange);
+}
+
+.nav-bar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nav-title {
+  width: 45%;
+}
+
+.nav-list {
+  width: 55%;
+  list-style: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-list-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--color-orange);
+  display: block;
+  margin: auto;
+  transition: var(--transition);
+}
+
+.nav-list-item:hover::after {
+  width: 100%;
+}
+
+.header-page {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, var(--l-gradiente), var(--l-gradiente)), url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10%;
+}
+
+.header-title {
+    color: var(--color-light);
+    font-size: 9vmin;
+    margin: 2rem;
+}
+
+.header-text {
+    color: var(--color-light);
+    width: 50%;
+}
+
+.header-anchor {
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: bold;
+    margin: 2rem;
+    background-color: var(--color-orange);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: 2px solid var(--color-orange);
+}
+
+.header-anchor:hover {
+    background-color: transparent;
+}
