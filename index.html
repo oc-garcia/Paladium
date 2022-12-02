@@ -1,40 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Palladium Spa & Resort</title>
-  </head>
-  <body>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palladium Resort & Spa</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- chamada Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <!-- linkar o css -->   
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body id="home">
+
+    <!-- menu -->
     <nav class="nav-bar">
-      <a class="logo" href=""><span class="logo-square">Pa</span>lladium</a>
-      <ul class="nav-list">
-        <li class="nav-list-item"><a class="anchor" href="">Home</a></li>
-        <li class="nav-list-item"><a class="anchor" href="">Paraíso</a></li>
-        <li class="nav-list-item"><a class="anchor" href="">Conheça</a></li>
-        <li class="nav-list-item"><a class="anchor" href="">Galeria</a></li>
-        <li class="nav-list-item"><a class="anchor" href="">Contato</a></li>
-      </ul>
-      <i class="fa-solid fa-bars menu-btn"></i>
+        <a href="" class="logo"><span class="logo-square">Pa</span>lladium</a>       
+        <ul class="nav-menu">
+            <li><a href="#home" class="menu-item">Home</a></li>
+            <li><a href="#explore" class="menu-item">Paraíso</a></li>
+            <li><a href="" class="menu-item">Conheça</a></li>
+            <li><a href="" class="menu-item">Galeria</a></li>
+            <li><a href="" class="menu-item">Contato</a></li>
+        </ul>
+        <i class="fa-solid fa-bars menu-btn"></i>
     </nav>
+
+    <!--------------------------- header --------------------------->
     <header class="header-page">
-      <h1 class="header-title">Palladium Spa & Resort</h1>
-      <p class="header-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellat laboriosam quo soluta earum ipsum
-        animi numquam veniam! Ab sed nulla voluptatum fugiat omnis odit eius. Eaque quaerat officia hic!
-      </p>
-      <a class="header-anchor" href="">Mais informações<i class="fa-regular fa-paper-plane"></i></a>
+        <h1>Palladium Resort & Spa</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quidem et quae eum nam aliquid modi. Voluptatum recusandae consectetur unde.</p>
+        <a href="" class="btn">Mais informações<i class="fa-regular fa-paper-plane"></i></a>
     </header>
-  </body>
+    <!--------------------------- fim header --------------------------->
+
+    <!--------------------------- explore ------------------------------->
+    <section class="box" id="explore">
+        <h2 class="box-title">Uma parte do paraíso</h2>
+        <div class="box-list">
+            <div class="box-list-item box-list-img1">
+                <a href="" class="btn">Clique e conheça</a>
+            </div>
+            <div class="box-list-item box-list-img2">
+                <a href="" class="btn">Clique e conheça</a>
+            </div>
+            <div class="box-list-item box-list-img3">
+                <a href="" class="btn">Clique e conheça</a>
+            </div>
+        </div>
+    </section>
+    <!--------------------------- fim explore --------------------------->
+
+
+
+
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+
+</body>
+
 </html>
