@@ -36,6 +36,10 @@ ol {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .nav-bar {
   width: 100%;
   height: 100px;
@@ -201,8 +205,7 @@ ol {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(var(--l-gradiente), var(--l-gradiente)),
-  url(../images/emcasa.jpg);
+  background-image: linear-gradient(var(--l-gradiente), var(--l-gradiente)), url(../images/emcasa.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,6 +229,49 @@ ol {
   line-height: 36px;
 }
 /********************************* fim hero *****************************/
+
+/********************************* gallery *****************************/
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.gallery-item {
+  width: 28%;
+  margin: 30px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 1px 1px 30px #ccc;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+}
+
+.gallery-item img {
+  width: 90%;
+  border-radius: 5px;
+}
+
+.gallery-item h3 {
+  margin: 20px 0;
+  font-weight: 800;
+}
+
+.gallery-item p {
+  margin: 0 0 30px;
+  width: 80%;
+}
+/********************************* fim gallery *****************************/
 
 /******************** Pensando no responsivo  **************************/
 /******** Menu ****************/
@@ -275,12 +321,16 @@ ol {
     width: 100%;
     margin-bottom: 30px;
   }
-}
 
-.hero-content {
+  .hero-content {
     width: 100%;
     padding: 20px;
     text-align: center;
+  }
+
+  .gallery-item {
+    width: 85%;
+  }
 }
 
 /* @media(max-width: 600px){
